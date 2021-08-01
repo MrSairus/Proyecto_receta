@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:app_recetas/src/connection/server_controller.dart';
+import 'package:app_recetas/src/screens/add_recipe_page.dart';
 import 'package:app_recetas/src/screens/details_page.dart';
 import 'package:app_recetas/src/screens/home_page.dart';
 import 'package:app_recetas/src/screens/login_page.dart';
@@ -57,6 +58,10 @@ class MyApp extends StatelessWidget {
               );
             case "/my_recipes":
               return MyRecipesPage(
+                _serverController,
+              );
+            case "/add_recipe":
+              return AddRecipePage(
                 _serverController,
               );
             case "/details":

@@ -46,4 +46,8 @@ class ServerController {
     loggedUser = user;
     return await server.updateUser(user);
   }
+
+  Future<Recipe> addRecipe(Recipe nRecipe) async {
+    return await server.addRecipe(nRecipe);
+  }
 }
